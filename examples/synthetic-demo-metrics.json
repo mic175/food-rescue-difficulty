@@ -1,0 +1,110 @@
+{
+  "data_source": "synthetic_demo",
+  "notice": "Fictional data; these scores are not food-rescue research results.",
+  "seed": 42,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "features": [
+    "travel_km",
+    "quantity_units",
+    "rain_mm",
+    "prior_donor_rescues",
+    "prior_recipient_rescues",
+    "volunteer_experience_days"
+  ],
+  "split_sizes": {
+    "train": 600,
+    "validation": 200,
+    "test": 200
+  },
+  "results": {
+    "easy": {
+      "logistic_regression": {
+        "validation": {
+          "roc_auc": 0.8400778751216799,
+          "pr_auc": 0.624309013076723,
+          "f1": 0.6306306306306306,
+          "accuracy": 0.795,
+          "positive_prevalence": 0.235,
+          "threshold": 0.5399999999999999,
+          "n_rows": 200
+        },
+        "test": {
+          "roc_auc": 0.8368794326241135,
+          "pr_auc": 0.6541618129832043,
+          "f1": 0.5714285714285714,
+          "accuracy": 0.745,
+          "positive_prevalence": 0.235,
+          "threshold": 0.5399999999999999,
+          "n_rows": 200
+        }
+      },
+      "random_forest": {
+        "validation": {
+          "roc_auc": 0.8300653594771241,
+          "pr_auc": 0.6402396993570415,
+          "f1": 0.6122448979591837,
+          "accuracy": 0.81,
+          "positive_prevalence": 0.235,
+          "threshold": 0.4499999999999999,
+          "n_rows": 200
+        },
+        "test": {
+          "roc_auc": 0.7919621749408984,
+          "pr_auc": 0.5693232599757313,
+          "f1": 0.5576923076923077,
+          "accuracy": 0.77,
+          "positive_prevalence": 0.235,
+          "threshold": 0.4499999999999999,
+          "n_rows": 200
+        }
+      }
+    },
+    "hard": {
+      "logistic_regression": {
+        "validation": {
+          "roc_auc": 0.8667084639498432,
+          "pr_auc": 0.7197751637243673,
+          "f1": 0.7121212121212122,
+          "accuracy": 0.81,
+          "positive_prevalence": 0.275,
+          "threshold": 0.49999999999999994,
+          "n_rows": 200
+        },
+        "test": {
+          "roc_auc": 0.8724764890282132,
+          "pr_auc": 0.7553790486524016,
+          "f1": 0.6865671641791045,
+          "accuracy": 0.79,
+          "positive_prevalence": 0.275,
+          "threshold": 0.49999999999999994,
+          "n_rows": 200
+        }
+      },
+      "random_forest": {
+        "validation": {
+          "roc_auc": 0.849153605015674,
+          "pr_auc": 0.6939232084940353,
+          "f1": 0.6666666666666666,
+          "accuracy": 0.775,
+          "positive_prevalence": 0.275,
+          "threshold": 0.37999999999999995,
+          "n_rows": 200
+        },
+        "test": {
+          "roc_auc": 0.8477742946708464,
+          "pr_auc": 0.6318278291630044,
+          "f1": 0.6330935251798561,
+          "accuracy": 0.745,
+          "positive_prevalence": 0.275,
+          "threshold": 0.37999999999999995,
+          "n_rows": 200
+        }
+      }
+    }
+  }
+}

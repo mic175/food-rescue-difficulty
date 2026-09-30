@@ -1,0 +1,6 @@
+# Preserve the supplied research files without newline conversion.
+archive/*.py -text -whitespace
+archive/requirements-original.txt -text
+archive/database.yaml.example -text
+research/*.pdf binary
+research/*.pptx binary

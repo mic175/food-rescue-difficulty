@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "For the underlying research algorithm and published results, cite the WWW 2024 paper listed below. This repository documents Mingyu Chen's separate 2025 capstone work."
+title: "Food Rescue Task Difficulty Prediction: CS 1950 Capstone"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Mingyu
+references:
+  - type: conference-paper
+    title: "Predicting and Presenting Task Difficulty for Crowdsourcing Food Rescue Platforms"
+    authors:
+      - family-names: Shi
+        given-names: Zheyuan Ryan
+      - family-names: Zhi
+        given-names: Jiayin
+      - family-names: Zeng
+        given-names: Siqi
+      - family-names: Zhang
+        given-names: Zhicheng
+      - family-names: Kapoor
+        given-names: Ameesh
+      - family-names: Hudson
+        given-names: Sean
+      - family-names: Shen
+        given-names: Hong
+      - family-names: Fang
+        given-names: Fei
+    year: 2024
+    start: 4686
+    end: 4696
+    doi: "10.1145/3589334.3648155"

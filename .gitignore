@@ -1,0 +1,42 @@
+# Environments and Python caches
+.venv/
+venv/
+my_env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+
+# Credentials and local database configuration
+.env
+.env.*
+!.env.example
+database.yaml
+database.local.yaml
+*.pem
+*.key
+
+# Operational data, training exports, and model files
+*.csv
+*.tsv
+*.parquet
+*.xlsx
+*.pkl
+*.pickle
+*.dump
+*.sql
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.zip
+data/private/
+dataset/
+ckpt*/
+checkpoint*/
+outputs/
+logs/
+
+# These documented result summaries contain only aggregate metrics.
+!examples/*metrics.csv
